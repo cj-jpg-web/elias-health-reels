@@ -1,0 +1,4 @@
+interface:
+  display_name: "Elias Health Reference Director"
+  short_description: "Translate and direct consistent Elias health reels"
+  default_prompt: "Use $direct-health-reference to transcribe this video, translate it faithfully, and deliver matched scene images and prompts."
