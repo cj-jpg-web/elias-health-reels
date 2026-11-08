@@ -16,5 +16,12 @@ These are recorded production observations and user preferences, not medical val
 ## Content boundaries
 Reference claims are not medical evidence. Do not label lung-cleansing, tar removal or simulated organ transformations verified. Keep factual review separate from translation and identify material publication conflicts explicitly. Never manufacture an outcome to match an unsupported claim.
 
+## 2026-11-08 — repeated bowl-and-spoon sequence
+- User rejected the tooth-reference batch: most frames repeated the same presenter/bowl/spoon composition. Ingredient continuity did not produce a clear visual sequence.
+- Execution missed the detailed source-shot map and a whole-sequence review. The skill also overemphasized copying neighboring frames and wider presenter framing without a required composition/purpose review.
+- A 30.4-second source was expanded into a planned 44-second package without a timed English read. That does not establish a 44-second need; sentence-by-sentence splits can create redundant explanation scenes.
+- Correction: distinguish source shots from generator clips, preserve state without copying composition, require before-action starting frames and inspect all frames together with the source map before delivery. Show each image inline directly above its prompt.
+- Status: workflow correction based on actual user feedback and delivered images. No replacement images or new video were generated to validate this change; future output quality remains to be demonstrated in production.
+
 ## Future entries
 Record asset/version, source of observation, user feedback, fix, checks, remaining uncertainty and whether a lesson is tested or proposed. Never infer virality from a nice-looking sample.

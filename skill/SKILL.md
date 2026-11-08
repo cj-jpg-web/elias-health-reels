@@ -34,23 +34,30 @@ Preserve culturally specific/ambiguous meaning, explaining uncertainty separatel
 Distinguish source endpoint from final runtime: “stop at 48 seconds” may mean the first 48s of source, not a 48s target. Establish the intended meaning when consequential; complete independent transcription meanwhile.
 
 ## 3. Map actual progression
-Record each shot's source interval, dialogue, framing, entry prop state, action, exit state and next shot.
-Track empty pot -> turmeric added -> ginger added -> simmered -> lemon added -> honey added -> finished drink. Carry completed actions forward. When explaining an ingredient later, hold/show it; DO NOT add it again.
-Follow actual source compositions and shot purposes. Do not force a generic hook/remedy/outro template. Camera changes must not reset the process.
+Complete the source-shot and generation-clip tables in references/templates.md BEFORE generating images. Assign source shot IDs separately from clip IDs. Record source intervals, visible evidence, dialogue, visual focus, framing, entry state, principal action, exit state and transition. Do not infer an unseen action from the spoken instructions.
+Track actual preparation states, including quantity, texture, utensil location and grip. Carry completed actions forward. When explaining an ingredient later, hold/show it; DO NOT add it again. Ingredient continuity alone is not visual progression.
+State what each shot advances: a physical change, demonstration, explanation or reveal. Preserve a purposeful source hold; do not invent activity merely to make every frame different. Follow actual source composition and purpose rather than a generic hook/remedy/outro template.
 
 ## 4. Allocate clips
 Use 4, 6, 8 or 10 seconds. A source shot may span clips; each split must continue rather than restart the action.
+Treat generation clips and editorial scenes as different units. Split at complete speech/action beats, not automatically at sentence boundaries. Use the shortest allowed duration that comfortably completes the measured beat; extend to the next supported duration when needed. Preserve a hold across clips when the source holds. Do not create extra presenter scenes or lengthen a short reference merely to fill slots.
 Measure an English read/voice guide when available. Word count is a heuristic, not proof of fit. Allow action and finishing margin. If exact wording does not fit, lengthen/repartition or explicitly propose compression.
 Run scripts/reference_tools.py lint episode.json. Structural checks do not prove medical truth, voice quality, pixel continuity or actual timing.
 
 ## 5. Create starting images
-Use image generation and approved character/setting references. Character-sheet-only generation is insufficient to lock the kitchen. Use accepted neighboring images to preserve exact cookware and grips.
+Use image generation and approved character/setting references. Character-sheet-only generation is insufficient to lock the kitchen. Use accepted neighboring images to preserve cookware and physical state, not to copy every pose and composition. Explicitly separate invariants (identity/set/props/state) from shot variables (focus/framing/pose/action).
 Generate ONE separate 9:16 image per scene, not a collage. Use the pose BEFORE action and correct already-completed ingredient states.
 Preserve identity, wardrobe, kitchen geometry, light, pot handle count, utensils, liquid, supporting identities and contact positions. Inspect every result and correct only failed details.
-Default to approved wider waist-up framing: elbows and work surface visible, sparse greenery, active props legible. Vary angles only when useful. Do not recreate an already approved asset.
+Use the wider waist-up view for presenter shots; choose source-supported action views when hands, contents or texture are the actual subject. Do not keep Elias's whole torso in every shot at the expense of action clarity. Camera variation is not a substitute for progression. Do not recreate an approved asset unless it fails a specific requirement.
+
+## 5a. Required sequence review before delivery
+Read references/sequence-review.md. Inspect ALL generated starting frames together in numeric order alongside their assigned actions and source-shot evidence. A contact sheet is for internal review only; deliver separate images.
+Check both adjacent frames and the whole sequence: redundant compositions, skipped actions, premature finished states, repeated additions, quantity/texture jumps and unjustified new scenes. A starting frame must precede its assigned action, not illustrate the finished action. Allow similar frames for an intentional continuous source hold; record why.
+Record pass/fix decisions with the actual defect and evidence in the checkpoint. Do not mark a sequence passed just because individual images look attractive or state labels are consistent. Correct only failed images/planning, then recheck affected neighbors before delivery. If an image is unavailable, label that review pending rather than claim it passed.
+The lint helper checks declared structure only. It does not inspect pixels or establish sequence quality. Perform the visual review yourself, without delegation. Do not regenerate a failed episode merely to test a skill update unless the user requests production.
 
 ## 6. Deliver image + prompt together
-Display each actual image immediately ABOVE its complete numbered prompt. Keep numeric order and identify superseded/corrected versions.
+Display each actual image as an INLINE VISIBLE PREVIEW immediately ABOVE its complete numbered prompt, not a click-only file link. Keep numeric order and identify superseded/corrected versions.
 Each prompt must contain exact dialogue, word-matched literal actions, end pose/prop state, camera/audio and the IDENTICAL complete voice block from voice-and-visuals.md. Avoid “gesture naturally” as the meaningful direction.
 Exclude additional speech, captions, music, logos and unplanned cuts. Do not introduce new preparation during explanation.
 
